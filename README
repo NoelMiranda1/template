@@ -1,0 +1,16 @@
+HOLA , por si nos estan viendo , buenos dias , buenas tardes y buenas noches 
+este es un templeate de react native para la empresa HNL. 
+
+aqui encontraran la estructura de folderes por defecto en los proyectos de HNL a partir de 
+la fecha 01-01-23 (aun no se xd) 
+
+se deben de realizar cambios ya que la creacion del template no cambia el package name de la aplicacione en 
+android tendrian que cambiar el nombre del package para poder publicar a la playstore se realiza de la 
+siguiente manera 
+"./android/src/main/AndroidManifest.xml" por defecto del template se crea de esta manera
+package="com.template"
+ de igual manera pueden cambiar el nombre de las carpetas para que concuerde con el nombre que pongan en el xml
+ que seria "./android/src/main/java/com/{nombre del xml package}" tambien en "android/app/build.gradle"
+applicationId "{nombre del xml package}" luego de esto pueden volver a construir y ya 
+ estaria modificado el packageName de su aplicaicon para android
+
