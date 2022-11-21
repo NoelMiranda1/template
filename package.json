@@ -1,0 +1,8 @@
+{
+  "name": "react-native-hnl",
+  "version": "0.0.1",
+  "description": "React Native Template, config redux, initial screen and folder structure",
+  "repository": "git@github.com:NoelMiranda1/template.git",
+  "author": "Noel Miranda <mirandantonionoel@gmail.com>",
+  "license": "MIT"
+}
