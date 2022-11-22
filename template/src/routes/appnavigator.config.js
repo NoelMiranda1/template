@@ -6,13 +6,13 @@ import AuthStack from './authstack.config';
 import {ROUTE_APP, ROUTE_AUTH} from './routes';
 
 const AppNavigator = () => {
-  // const auth = useSelector(state => state);
-  // console.log('auth', auth);
+  const auth = useSelector(state => state.auth.authenticate);
+
   const Stack = createNativeStackNavigator();
 
   return (
     <Stack.Navigator
-      initialRouteName={ROUTE_AUTH}
+      initialRouteName={auth ? ROUTE_APP : ROUTE_AUTH}
       screenOptions={{
         headerShown: false,
         animationEnabled: false,

@@ -1,18 +1,19 @@
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
 
 const Home = () => {
-  // const dispatch = useDispatch();
-  // const global = useSelector(state => state);
-
-  // console.log('state', global);
-
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View style={style.view}>
       <Text>Home</Text>
     </View>
   );
 };
 
+const style = StyleSheet.create({
+  view: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 export default Home;
