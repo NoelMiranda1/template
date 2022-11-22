@@ -1,2 +1,4 @@
 import authSlice from './auth/auth.slice';
-export default {auth: authSlice};
+import themeSlice from './theme/theme.slice';
+
+export default {auth: authSlice, theme: themeSlice};

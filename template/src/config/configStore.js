@@ -5,5 +5,8 @@ import Slices from '../features/index';
 
 export const store = configureStore({
   reducer: Slices,
-  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(logger),
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat(logger),
 });
