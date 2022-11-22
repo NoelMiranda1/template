@@ -5,18 +5,22 @@ import {store} from '../../config/configStore';
 import {StatusBar} from 'react-native';
 import AppNavigator from '../../routes/appnavigator.config';
 import ThemeProvider from '../../config/theme.config';
+import ErrorBoundary from 'react-native-error-boundary';
+import ErrorBoundaryApp from '../../components/error/error.boundary';
 
 function App() {
   return (
     <NavigationContainer>
       <Provider store={store}>
         <ThemeProvider>
-          <StatusBar
-            barStyle="light-content"
-            backgroundColor={'blue'}
-            animated={true}
-          />
-          <AppNavigator />
+          <ErrorBoundary FallbackComponent={ErrorBoundaryApp}>
+            <StatusBar
+              barStyle="light-content"
+              backgroundColor={'blue'}
+              animated={true}
+            />
+            <AppNavigator />
+          </ErrorBoundary>
         </ThemeProvider>
       </Provider>
     </NavigationContainer>

@@ -3,11 +3,21 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {swapTheme} from '../../../features/theme/theme.slice';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Home = () => {
   const dispatch = useDispatch();
   const theme = useSelector(state => state.theme);
-
+  // undefined.map(e => console.log(e.name));
+  const updateTheme = async value => {
+    try {
+      await AsyncStorage.setItem('@theme', value);
+      dispatch(swapTheme(value));
+    } catch (e) {
+      // saving error
+      console.log('Error: ', e);
+    }
+  };
   return (
     <View
       style={[
@@ -37,8 +47,8 @@ const Home = () => {
         onPress={() => {
           try {
             theme.theme === 'ligth'
-              ? dispatch(swapTheme('dark'))
-              : dispatch(swapTheme('ligth'));
+              ? updateTheme('dark')
+              : updateTheme('ligth');
           } catch (error) {
             console.log('Error: ', error);
           }

@@ -7,8 +7,8 @@ import {swapTheme} from '../features/theme/theme.slice';
 
 const getInitialTheme = async () => {
   try {
-    const value = await AsyncStorage.getItem('@storage_Key');
-    console.log('value: ', value);
+    const value = await AsyncStorage.getItem('@theme');
+
     if (value !== null) {
       // value previously stored
       return value;
