@@ -1,10 +1,9 @@
-/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../screens/auth/login.screen';
 import {LOGIN} from './routes';
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const AuthStack = () => {
   return (
