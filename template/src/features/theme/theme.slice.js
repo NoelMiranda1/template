@@ -21,10 +21,10 @@ const themeSlice = createSlice({
       big: 20,
     },
     fonts: {
-      sizeDefault: 14,
-      small: 12,
-      medium: 16,
-      big: 20,
+      sizeDefault: 16,
+      small: 14,
+      medium: 20,
+      big: 24,
     },
     zIndex: {
       back: -10,

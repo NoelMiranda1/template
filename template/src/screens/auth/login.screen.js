@@ -24,6 +24,7 @@ const Login = () => {
       <Text
         style={{
           color: theme.theme === 'ligth' ? theme.ligth.text : theme.dark.text,
+          fontSize: theme.fonts.big,
         }}>
         Login
       </Text>
@@ -35,6 +36,7 @@ const Login = () => {
             theme.theme === 'ligth'
               ? theme.ligth.colorMain
               : theme.dark.colorMain,
+          margin: theme.margin.default,
         }}
         onPress={() => {
           navigation.navigate(ROUTE_APP);
@@ -43,6 +45,7 @@ const Login = () => {
         <Text
           style={{
             color: theme.theme === 'ligth' ? theme.ligth.text : theme.dark.text,
+            fontSize: theme.fonts.medium,
           }}>
           Home
         </Text>
