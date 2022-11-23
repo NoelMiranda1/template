@@ -4,7 +4,7 @@
 
 este es un templeate de react native para la empresa HypernovaLabs.
 
-## Aqui encontraran la estructura de folderes por defecto en los proyectos de HNL a partir de la fecha 01-01-23 (aun no se xd)
+## Aqui encontraran la estructura de folderes por defecto en los proyectos, y configuraciones esenciales para todos los proyectos de HNL a partir de la fecha 01-01-23 (aun no se xd)
 
 # Cambios a realizar (Android)
 

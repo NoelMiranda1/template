@@ -8,6 +8,8 @@ import ThemeProvider from '../../config/theme.config';
 import ErrorBoundary from 'react-native-error-boundary';
 import ErrorBoundaryApp from '../../components/error/error.boundary';
 
+// LEA EL README JOVEN :D
+
 function App() {
   return (
     <NavigationContainer>
