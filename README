@@ -1,6 +1,9 @@
-# HOLA , por si nos estan viendo , buenos dias , buenas tardes y buenas noches;
+<!-- @format -->
+
+# Hola , por si nos estan viendo , buenos dias , buenas tardes y buenas noches;
 
 este es un templeate de react native para la empresa HypernovaLabs.
+
 ## Aqui encontraran la estructura de folderes por defecto en los proyectos de HNL a partir de la fecha 01-01-23 (aun no se xd)
 
 # Cambios a realizar
@@ -20,6 +23,6 @@ siguiente manera:
 Se dirige a "android/app/src/main/res/values/strings.xml
 ahi encontrara lo siguiente:
 
-<resources>
+<!-- <resources>
     <string name="app_name">{Nuevo nombte de la aplicacion aqui}</string>
-</resources>
+</resources> -->
