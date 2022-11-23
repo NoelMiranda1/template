@@ -3,8 +3,8 @@ import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {ROUTE_APP} from '../../routes/routes';
-import {useDispatch, useSelector} from 'react-redux';
-import {authThunk} from '../../features/auth/auth.actions';
+import {useSelector} from 'react-redux';
+// import {authThunk} from '../../features/auth/auth.actions';
 
 const Login = () => {
   const navigation = useNavigation();

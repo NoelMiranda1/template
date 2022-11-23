@@ -18,6 +18,7 @@ const Home = () => {
       console.log('Error: ', e);
     }
   };
+  // undefined.map(e => console.log('E: ', e));
   return (
     <View
       style={[
