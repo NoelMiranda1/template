@@ -23,6 +23,6 @@ siguiente manera:
 Se dirige a "android/app/src/main/res/values/strings.xml
 ahi encontrara lo siguiente:
 
-<!-- <resources>
+<resources>
     <string name="app_name">{Nuevo nombte de la aplicacion aqui}</string>
-</resources> -->
+</resources>
