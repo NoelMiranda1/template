@@ -2,29 +2,10 @@
 
 # Hola , por si nos estan viendo , buenos dias , buenas tardes y buenas noches;
 
-este es un templeate de react native para la empresa HypernovaLabs.
+este es un templeate de react native con configuraciones iniciales predefinidas tales como , redux-toolkit ,react navigation , errorBoundaryApp y el inicio para manejo de customTheme en el app
 
-## Aqui encontraran la estructura de folderes por defecto en los proyectos, y configuraciones esenciales para todos los proyectos de HNL a partir de la fecha 01-01-23 (aun no se xd)
+para hacer utilizacion de este templete debe de ejecutar lo siguiente:
 
-# Cambios a realizar (Android)
+npx react-native init newProject --template https://github.com/NoelMiranda1/template
 
-La creacion del template no cambia el package name de la aplicacione en
-android tendrian que cambiar el nombre del package para poder publicar a la playstore se realiza de la
-siguiente manera:
-
-- "./android/src/main/AndroidManifest.xml" por defecto del template se crea de esta manera
-  package="com.template"
-  de igual manera pueden cambiar el nombre de las carpetas para que concuerde con el nombre que pongan en el xml
-  que seria "./android/src/main/java/com/{nombre del xml package}"
-- Modificar aplicationId en "android/app/build.gradle"applicationId "{nombre del xml package}" luego de esto pueden volver
-
-# Modificar nombre de la aplicacion
-
-Se dirige a "android/app/src/main/res/values/strings.xml
-ahi encontrara lo siguiente:
-
-```
-<resources>
-    <string name="app_name">{Nuevo nombte de la aplicacion aqui}</string>
-</resources>
-```
+en el template se encuentra un readme con cambios que debe de realizar para un correcto procesamiento de su app :D
