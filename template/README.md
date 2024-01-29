@@ -17,6 +17,6 @@ ahi encontrara lo siguiente:
 
 ```
 <resources>
-    <string name="app_name">{Nuevo nombte de la aplicacion aqui}</string>
+    <string name="app_name">{Nuevo nombre de la aplicacion aqui}</string>
 </resources>
 ```
